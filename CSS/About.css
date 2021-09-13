@@ -1,0 +1,304 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+	font-family: "San Francisco Display Regular", "San Francisco Display SemBd", "San Francisco Display Thin", "San Francisco Display UltLt", "San Francisco Text BldIta G1", 'san serif';
+}
+/* Form contact */
+
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/* Body */
+
+body {
+  font-family: sans-serif;
+  color: #333;
+	display: flex;
+     justify-content: flex-end;
+     align-items: left;
+     min-height: 100vh;
+     flex-direction: column;
+}	
+/* End form */
+/* Header */
+.header {
+  overflow: hidden;
+	width: 100%;
+	align-content: top;
+	align-items: top;
+	align-content: flex-start;
+  background-color: #121212;
+  padding-top: 20px;
+  font: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	
+}
+h1 { 
+text-align: center;
+	align-content: center;
+	align-self: center;
+	padding-left: 4px;
+	padding-top: 10px;
+	font-family: Roboto,"San Francisco Display SemBd", "San Francisco Text BldIta G1";
+	font-style: bold;
+	font-size: 40px;
+	font-display: optional;	
+}
+h3
+{
+	padding-top: 10px;
+	padding-left: 207px;
+	padding-right: 207px;
+	font-size: 18px;
+	align-self: center;
+}
+h4{
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-size: 25px;
+	align-content: center;
+	alignment-baseline: center;
+	align-self: center;
+	text-align: center;
+	font: "San Francisco Display Thin";
+	font-size: 22px;
+}
+.header a {
+  float: left;
+  color: #999;
+  text-align: center;
+  padding-bottom: 12px;
+	padding-right: 20px;
+	padding-left: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* header */
+.header a.logo {
+padding-left: 91px;
+}
+/* Hiệu ứng text */
+.header a:hover {
+  text-decoration-color: white;
+  color: white;
+}
+/* click hiện lên*/
+.header a.active {
+  color: #999;
+}
+/* phần thanh menu phải */
+.header-right {
+	padding-right: 91px;
+	padding-top: 9px;
+  float: right;
+}
+/* fit all screen */ 
+@media screen and (max-width: 768px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+/*== Footer ==*/
+footer{
+     position: relative;
+     width: 100%;
+     height: auto;
+     padding: 50px 100px;
+     background: #121212;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+footer .container{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     flex-direction: row;
+	background: #121212;
+ }
+/*== Giới thiệu ==*/
+footer .container .noi-dung{
+     margin-right: 30px;
+ }
+footer  .container .noi-dung.about{
+     width:40%;
+ }
+ footer .container .noi-dung.about h2{
+     position: relative;
+     color: #fff;
+     font-weight: 500;
+     margin-bottom: 15px;
+ }
+ footer .container .noi-dung.about h2:before{
+     content: '';
+     position: absolute;
+     bottom: -5px;
+     left: 0;
+     width: 50px;
+     height: 2px;
+     background: #f00;
+ }
+footer .container .noi-dung.about p{
+     color: #999;
+ }
+ /*Icon*/
+ .social-icon{
+     margin-top: 20px;
+     display: flex;
+ }
+.social-icon li {
+     list-style: none;
+ }
+ .social-icon li a{  
+	 display: inline-block;
+     width: 40px;
+     height: 40px;
+     background: #222;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-right: 10px;
+     text-decoration: none;
+     border-radius: 14px;
+ }
+.social-icon li a:hover{
+     background: white;
+ }
+.social-icon li a .fa{
+     color: #fff;
+     font-size: 20px;
+ }
+/*== link ==*/ 
+.links h2{
+     position: relative;
+     color: #fff;
+     font-weight: 500;
+     margin-bottom: 15px;
+ }
+/*== Link ==*/
+.links h2{
+     position: relative;
+     color: #fff;
+     font-weight: 500;
+     margin-bottom: 15px;
+ }
+.links h2::before{
+     content: '';
+     position: absolute;
+     bottom: -5px;
+     left: 0;
+     width: 50px;
+     height: 2px;
+     background: #f00;
+ }
+.links{
+    position: relative;
+    width: 25%;
+ }
+ .links ul li{
+     list-style: none;
+ }
+ .links ul li a{
+     color: #999;
+     text-decoration: none;
+     margin-bottom: 10px;
+     display: inline-block;
+ }
+.links ul li a:hover{
+     color: #fff;
+ }
+/*== Contact ==*/ 
+.contact h2{
+     position: relative;
+     color: #fff;
+     font-weight: 500;
+     margin-bottom: 15px;
+ }
+.contact h2::before{
+     content: '';
+     position: absolute;
+     bottom: -5px;
+     left: 0;
+     width: 50px;
+     height: 2px;
+     background: #f00;
+ }
+.contact{
+     width: calc(35% - 60px);
+     margin-right: 0 !important;
+ }
+.contact .info{
+     position: relative;
+ }
+ .contact .info li{
+     display: flex;
+     margin-bottom: 16px;
+ }
+ .contact .info li span:nth-child(1) {
+     color: #fff;
+     font-size: 20px;
+     margin-right: 10px;
+ }
+.contact .info li span{
+     color: #999;
+ }
+.contact .info li a{
+     color: #999;
+     text-decoration: none;
+		text-decoration-color: #999;
+ }
+/*== fit all screen ==*/
+@media  (max-width: 768px){
+     footer{
+         padding: 20px;
+              }
+     footer .container{
+         flex-direction: column;
+     }
+     footer .container .noi-dung{
+         margin-right: 0;
+         margin-bottom: 40px;
+     }
+     footer .container, .noi-dung.about, .links, .contact{
+         width: 100%;
+     }
+ }
